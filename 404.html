@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // 古いURLのパス（/以降の文字）を維持したまま、新しいCloudflareのドメインに転送します
+    var newDomain = "https://noppo.pages.dev";
+    window.location.replace(newDomain + window.location.pathname + window.location.search);
+  </script>
+</head>
+<body>
+  ページを移動しています。自動的に切り替わらない場合は <a id="link" href="#">こちら</a> をクリックしてください。
+  <script>
+    document.getElementById("link").href = "https://pages.dev" + window.location.pathname + window.location.search;
+  </script>
+</body>
+</html>
